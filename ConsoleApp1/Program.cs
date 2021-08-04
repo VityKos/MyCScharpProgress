@@ -8,19 +8,26 @@ namespace ConsoleApp1
        
         public static void Main()
 		{
-            string userInput = Console.ReadLine();
-            Console.WriteLine(Calculate(userInput));
+            TestMove("a1", "d4");
+            TestMove("f4", "e7");
+            TestMove("a1", "a4");
             
-		}
-        
-        public static double Calculate(string userInput)
-        {
-            string[] data = userInput.Split();
-            var startSum = Convert.ToDouble(data[0]);
-            var procent = Convert.ToDouble(data[1]);
-            var mounth = Convert.ToDouble(data[2]);
-            var result = startSum * Math.Pow(1 + (procent / 12) / 100, mounth);
-            return result;
         }
+        public static void TestMove(string from, string to)
+        {
+            Console.WriteLine("{0}-{1} {2}", from, to, IsCorrectMove(from, to));
+        }
+        public static bool IsCorrectMove(string from, string to)
+        {
+            var dx = Math.Abs(to[0] - from[0]); //смещение фигуры по горизонтали
+            var dy = Math.Abs(to[1] - from[1]); //смещение фигуры по вертикали
+            if (dx == 0 && dy == 0) return false;
+            if (dy == 0 | dx == 0) return true;
+            if (dx <= 1 && dy <= 1) return true;
+            if (dx == dy) return true;
+
+            return false;
+
+        }   
     }
 }
