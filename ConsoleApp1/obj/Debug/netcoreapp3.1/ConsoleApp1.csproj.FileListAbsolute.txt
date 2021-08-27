@@ -11,3 +11,6 @@ C:\Users\User\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\Conso
 C:\Users\User\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.dll
 C:\Users\User\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.pdb
 C:\Users\User\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.genruntimeconfig.cache
+C:\Users\User\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\ClassLibrary1.dll
+C:\Users\User\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\ClassLibrary1.pdb
+C:\Users\User\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.csproj.CopyComplete

@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
-      "projectName": "ConsoleApp1",
-      "projectPath": "C:\\Users\\User\\source\\repos\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "C:\\Users\\User\\source\\repos\\ConsoleApp1\\ConsoleApp1\\CteaterTextByNGramm.csproj",
+      "projectName": "CteaterTextByNGramm",
+      "projectPath": "C:\\Users\\User\\source\\repos\\ConsoleApp1\\ConsoleApp1\\CteaterTextByNGramm.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\User\\source\\repos\\ConsoleApp1\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",

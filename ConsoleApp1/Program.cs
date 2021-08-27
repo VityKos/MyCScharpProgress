@@ -1,33 +1,30 @@
 ﻿using System;
+using System.Text;
+using System.IO;
 
 
 namespace ConsoleApp1
 {
 	class Program
 	{
-       
         public static void Main()
-		{
-            TestMove("a1", "d4");
-            TestMove("f4", "e7");
-            TestMove("a1", "a4");
-            
-        }
-        public static void TestMove(string from, string to)
         {
-            Console.WriteLine("{0}-{1} {2}", from, to, IsCorrectMove(from, to));
+            var textFromFile = TakeTextFromFile();
+            var parsedText = TextParser.ParseByWord(textFromFile);
+
+            var result = NGramming.OneTwoGramming(parsedText); 
+
+            string phraseBeginning = Console.ReadLine();
+            int wordsCount = int.Parse(Console.ReadLine());
+
+            var sens = CreateText.CreateOneSentence(phraseBeginning, wordsCount, result);
+            Console.WriteLine(sens);
         }
-        public static bool IsCorrectMove(string from, string to)
+        
+        static string TakeTextFromFile()
         {
-            var dx = Math.Abs(to[0] - from[0]); //смещение фигуры по горизонтали
-            var dy = Math.Abs(to[1] - from[1]); //смещение фигуры по вертикали
-            if (dx == 0 && dy == 0) return false;
-            if (dy == 0 | dx == 0) return true;
-            if (dx <= 1 && dy <= 1) return true;
-            if (dx == dy) return true;
-
-            return false;
-
-        }   
-    }
+            string path = @"C:\Users\User\source\repos\ConsoleApp1\ConsoleApp1\Text.txt";
+            return File.ReadAllText(path, Encoding.Default);
+        }
+	}
 }
