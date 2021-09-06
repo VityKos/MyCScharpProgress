@@ -10,6 +10,7 @@ namespace ConsoleApp1
         public static void Main()
         {
             var textFromFile = TakeTextFromFile();
+            
             var parsedText = TextParser.ParseByWord(textFromFile);
 
             var result = NGramming.OneTwoGramming(parsedText); 
